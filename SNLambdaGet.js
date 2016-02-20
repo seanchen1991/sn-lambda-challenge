@@ -9,7 +9,7 @@ var dynamo = new doc.DynamoDB();
  *   - payload: a parameter to pass to the operation being performed
  */
 
- exports.context = function(event, context) {
+ exports.handler = function(event, context) {
      var operation = event.operation;
 
      if (event.tableName) {
