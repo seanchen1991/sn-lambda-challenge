@@ -13,18 +13,21 @@ exports.handler = function(event, context) {
         if (err) {
             context.succeed({
                 "success": "false",
+                "key": event.params.key,
                 "failureReason": err.message
             });
             context.done();
         } else if (Object.keys(data).length === 0) {
             context.succeed({
                 "success": "false",
+                "key": event.params.key,
                 "failureReason": "Key not found"
             });
         } else {
             context.succeed({
                 "success": "true",
-                "value": data
+                "key": event.params.key,
+                "value": data.Item
             });
             context.done();
         }
