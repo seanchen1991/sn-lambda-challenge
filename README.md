@@ -10,5 +10,5 @@ curl -H "Content-Type: application/json" -X POST -d "{\"operation\":\"create\",\
 
 Example GET Request:
 ```
-curl -H "Content-Type: application/json" -X GET -d "{\"operation\":\"fetch\",\"tableName\":\"SN-Lambda-Table\",\"payload\":{\"Key\":{\"Key\":\"foo\"}}}" https://omf1ko8ytd.execute-api.us-west-2.amazonaws.com/prod/dynamodboperations
+curl -X GET https://omf1ko8ytd.execute-api.us-west-2.amazonaws.com/prod/operations/fetch/{somekey}
 ```
