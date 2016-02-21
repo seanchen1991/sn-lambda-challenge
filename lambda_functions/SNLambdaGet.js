@@ -24,7 +24,7 @@ exports.handler = function(event, context) {
         } else {
             context.succeed({
                 "success": "true",
-                "value": data.Item
+                "value": data
             });
             context.done();
         }
