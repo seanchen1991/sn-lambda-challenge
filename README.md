@@ -5,7 +5,7 @@ The specification for this challenge can be found [here](https://gist.github.com
 
 Example POST Request:
 ```
-curl -H "Content-Type: application/json" -X POST -d "{\"operation\":\"create\",\"tableName\":\"SN-Lambda-Table\",\"payload\":{\"Item\":{\"Key\":\"foo\", \"name\":\"Sean\"}}}" https://omf1ko8ytd.execute-api.us-west-2.amazonaws.com/prod/dynamodboperations
+curl -H "Content-Type: application/json" -X POST -d "{\"Key\":\"foo\", \"name\":\"Sean\"}" https://omf1ko8ytd.execute-api.us-west-2.amazonaws.com/prod/operations/upsert
 ```
 
 Example GET Request:
