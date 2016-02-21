@@ -18,3 +18,5 @@ To run the deploy script:
 1. Ensure that it has the proper permissions to execute by running `chmod +x scripts/deploy.sh`.
 
 2. The script requires two arguments, the first one being the execution role ARN for the IAM role you wish the Lambda functions to utilize. The second argument is the API ID of the API you wish to deploy.
+
+Execute the script from the project's root directory by running `scripts/deploy.sh`.
